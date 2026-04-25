@@ -7,35 +7,35 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-black min-h-screen flex items-center justify-center">
-    <section class="w-full h-screen flex flex-col p-4 sm:h-auto sm:w-[70%] md:w-[50%] lg:w-[35%] sm:p-5 shadow-2xl">
+    <section class="w-full h-screen flex flex-col justify-end p-4 sm:h-auto sm:justify-normal sm:w-[70%] md:w-[50%] lg:w-[35%] sm:p-5 shadow-2xl">
       <input
         type="text"
         placeholder="0"
-        class="text-white w-full p-4 sm:p-5 rounded-xl bg-gray-700/50 focus:outline-none text-2xl sm:text-xl"
+        class="text-white w-full p-4 sm:p-5 rounded-xl bg-gray-700/50 focus:outline-none text-2xl sm:text-xl mb-4"
         id="output"
       />
 
-      <div class="grid grid-cols-4 gap-3 mt-4 text-white text-lg flex-1 sm:flex-none sm:text-base sm:gap-3 sm:mt-6">
-        <button onclick="clear_output()" class="bg-gray-700 rounded-lg sm:p-3">CE</button>
-        <button onclick="button_input('%')" class="bg-gray-700 rounded-lg sm:p-3">%</button>
-        <button class="bg-green-700 rounded-lg sm:p-3">X</button>
-        <button onclick="button_input('*')" class="bg-green-700 rounded-lg sm:p-3">*</button>
-        <button onclick="button_input(7)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">7</button>
-        <button onclick="button_input(8)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">8</button>
-        <button onclick="button_input(9)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">9</button>
-        <button onclick="button_input('/')" class="bg-green-700 rounded-lg sm:p-3">/</button>
-        <button onclick="button_input(4)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">4</button>
-        <button onclick="button_input(5)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">5</button>
-        <button onclick="button_input(6)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">6</button>
-        <button onclick="button_input('-')" class="bg-green-700 rounded-lg sm:p-3">-</button>
-        <button onclick="button_input(1)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">1</button>
-        <button onclick="button_input(2)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">2</button>
-        <button onclick="button_input(3)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">3</button>
-        <button onclick="button_input('+')" class="bg-green-700 rounded-lg sm:p-3">+</button>
-        <button onclick="button_input('.')" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">.</button>
-        <button onclick="button_input(0)" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">0</button>
-        <button onclick="button_input('00')" class="bg-gray-500/25 text-green-600 rounded-lg sm:p-3">00</button>
-        <button onclick="get_answer()" class="bg-green-700 rounded-lg sm:p-3">=</button>
+      <div class="grid grid-cols-4 gap-3 text-white text-lg sm:text-base sm:gap-3 sm:mt-6">
+        <button onclick="clear_output()" class="bg-gray-700 p-5 rounded-lg sm:p-3">CE</button>
+        <button onclick="button_input('%')" class="bg-gray-700 p-5 rounded-lg sm:p-3">%</button>
+        <button class="bg-green-700 p-5 rounded-lg sm:p-3">X</button>
+        <button onclick="button_input('*')" class="bg-green-700 p-5 rounded-lg sm:p-3">*</button>
+        <button onclick="button_input(7)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">7</button>
+        <button onclick="button_input(8)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">8</button>
+        <button onclick="button_input(9)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">9</button>
+        <button onclick="button_input('/')" class="bg-green-700 p-5 rounded-lg sm:p-3">/</button>
+        <button onclick="button_input(4)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">4</button>
+        <button onclick="button_input(5)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">5</button>
+        <button onclick="button_input(6)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">6</button>
+        <button onclick="button_input('-')" class="bg-green-700 p-5 rounded-lg sm:p-3">-</button>
+        <button onclick="button_input(1)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">1</button>
+        <button onclick="button_input(2)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">2</button>
+        <button onclick="button_input(3)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">3</button>
+        <button onclick="button_input('+')" class="bg-green-700 p-5 rounded-lg sm:p-3">+</button>
+        <button onclick="button_input('.')" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">.</button>
+        <button onclick="button_input(0)" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">0</button>
+        <button onclick="button_input('00')" class="bg-gray-500/25 text-green-600 rounded-lg p-5 sm:p-3">00</button>
+        <button onclick="get_answer()" class="bg-green-700 p-5 rounded-lg sm:p-3">=</button>
       </div>
     </section>
 
