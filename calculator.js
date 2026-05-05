@@ -14,3 +14,7 @@ function get_answer() {
 function clear_output() {
     display.value = ""
 }
+
+function deleteLast(){
+    display.value = display.value.slice(0, -1);
+}
