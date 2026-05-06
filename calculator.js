@@ -1,17 +1,17 @@
 
 const display = document.getElementById("output");
 
-function button_input(num){
+function buttonInput(num){
 
     display.value += num ;
 }
 
 
-function get_answer() {
+function getAnswer() {
     display.value = eval(display.value);
 }
 
-function clear_output() {
+function clearOutput() {
     display.value = ""
 }
 
